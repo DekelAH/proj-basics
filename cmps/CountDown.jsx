@@ -5,8 +5,9 @@ const { useState, useEffect } = React
 
 export function CountDown({ startFrom = 6, toTime, onDone }) {
 
-    const [timer, setTimer] = useState(toTime ? (toTime - Date.now()) / 1000 : startFrom)
+    const [timer, setTimer] = useState(toTime ? Math.ceil((toTime - Date.now()) / 1000) : startFrom)
     const lessThanTen = timer < 6 && timer > 0 ? 'red-count-down' : '';
+
     useEffect(() => {
 
         const intervalId = setInterval(() => {

@@ -14,6 +14,7 @@ export function MouseMonitor() {
     };
 
     useEffect(() => {
+        
         if (isTracking) {
             window.addEventListener('mousemove', handleMouseMove);
         } else {
@@ -23,8 +24,9 @@ export function MouseMonitor() {
         return () => {
             window.removeEventListener('mousemove', handleMouseMove);
         };
+
     }, [isTracking])
-    
+
     const toggleTracking = () => {
         setIsTracking(!isTracking);
     }

@@ -1,10 +1,10 @@
 
-export function AppHeader({page = 'home', onSetPage}) {
+export function AppHeader({ page = 'home', onSetPage }) {
 
     function onPageChange(ev, page) {
         ev.preventDefault()
         onSetPage(page)
-    }    
+    }
 
     return (
         <header className="app-header full main-layout">
@@ -18,6 +18,22 @@ export function AppHeader({page = 'home', onSetPage}) {
                     <a href="" className={(page === 'about') ? 'active' : ''}
                         onClick={(ev) => onPageChange(ev, 'about')}>
                         About
+                    </a> |
+                    <a href="" className={(page === 'animal-list') ? 'active' : ''}
+                        onClick={(ev) => onPageChange(ev, 'animal-list')}>
+                        Animal-List
+                    </a> |
+                    <a href="" className={(page === 'count-down') ? 'active' : ''}
+                        onClick={(ev) => onPageChange(ev, 'count-down')}>
+                        Count-Down
+                    </a> |
+                    <a href="" className={(page === 'watcher-app') ? 'active' : ''}
+                        onClick={(ev) => onPageChange(ev, 'watcher-app')}>
+                        Watcher-App
+                    </a> |
+                    <a href="" className={(page === 'mouse-monitor') ? 'active' : ''}
+                        onClick={(ev) => onPageChange(ev, 'mouse-monitor')}>
+                        Mouse-Monitor
                     </a>
                 </nav>
             </section>
