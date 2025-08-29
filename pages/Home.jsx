@@ -1,5 +1,6 @@
 import { AnimalList } from "../cmps/AnimalList.jsx"
 import { CountDown } from "../cmps/CountDown.jsx"
+import { MouseMonitor } from "../cmps/MouseMonitor.jsx"
 import { SeasonClock } from "../cmps/SeasonClock.jsx"
 import { WatcherAppIndex } from "../cmps/WatcherAppIndex.jsx"
 
@@ -15,7 +16,8 @@ export function Home() {
             {/* <AnimalList /> */}
             {/* <SeasonClock /> */}
             {/* <CountDown toTime={Date.now() + 1000 * 10} onDone={() => { console.log('Its Time!') }} /> */}
-            {<WatcherAppIndex />}
+            {/* {<WatcherAppIndex />} */}
+            {<MouseMonitor />}
         </section>
     )
 }
