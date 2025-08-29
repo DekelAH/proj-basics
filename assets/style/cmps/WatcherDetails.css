@@ -1,0 +1,26 @@
+.watcher-details {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    background-color: blanchedalmond;
+}
+
+h1 {
+    text-align: center;
+}
+
+li {
+
+    color: var(--clr1);
+    font-size: large;
+}
+
+.close-btn {
+
+    margin-top: auto;
+}

@@ -1,0 +1,29 @@
+.season-bg {
+
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50%;
+    height: 50vh;
+    background-color: lightskyblue;
+    border: 5px solid var(--clr1);
+}
+
+.season-bg.dark {
+
+    background-color: darkblue;
+}
+
+img {
+
+    width: 200px;
+    height: 200px;
+}
+
+h1 {
+
+    color: white;
+}

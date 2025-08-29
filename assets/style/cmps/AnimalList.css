@@ -1,0 +1,41 @@
+table {
+
+    position: absolute;
+    height: 60vh;
+    width: 80%;
+    text-align: center;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0, 1);
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+a {
+
+    color: var(--clr1);
+    text-decoration: underline;
+}
+
+th {
+
+    background-color: var(--clr1);
+    color: white;
+}
+
+tr:hover {
+
+    background-color: #f1f1f1;
+}
+
+td {
+
+    color: #333;
+}

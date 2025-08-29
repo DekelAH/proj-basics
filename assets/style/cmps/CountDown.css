@@ -1,0 +1,29 @@
+.counter-container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    width: 30%;
+    height: 30vh;
+    background-color: lightskyblue;
+    border: 5px solid var(--clr1);
+}
+
+.count-down {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    margin-inline-start: 30px;
+    margin-inline-end: 30px;
+    background-color: lightskyblue;
+    border: 3px solid var(--clr1);
+}
+
+.red-count-down {
+
+    color: red;
+}

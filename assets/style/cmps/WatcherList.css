@@ -1,0 +1,15 @@
+.watcher-list {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    height: 70%;
+    border: 3px solid var(--clr1);
+}
+
+.btn-section {
+
+    display: flex;
+    justify-content: center;
+}
