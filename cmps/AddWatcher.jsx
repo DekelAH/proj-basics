@@ -3,7 +3,7 @@ import { watcherService } from "../services/watcher.service.js";
 const { useState } = React;
 
 
-export function AddWatcher({ onCloseAddWatcherModal }) {
+export function AddWatcher({ onCloseAddWatcherModal, onAddWatcher }) {
 
     const [watcherData, setWatcherData] = useState({
         fullName: '',
@@ -15,8 +15,8 @@ export function AddWatcher({ onCloseAddWatcherModal }) {
     const handleSubmit = (event) => {
 
         event.preventDefault()
-        console.log(watcherData)
         watcherService.save(watcherData)
+        onAddWatcher(watcherData)
         setFullName('')
         setMovie('')
         onCloseAddWatcherModal(false);

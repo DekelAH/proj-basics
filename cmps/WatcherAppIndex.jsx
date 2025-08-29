@@ -19,6 +19,11 @@ export function WatcherAppIndex() {
             .catch((error) => console.log('Error getting watchers', error))
     }, [])
 
+    function onAddWatcher(watcher) {
+
+        watchers.push(watcher)
+    }
+
     function onRemoveWatcher(watcherId) {
 
         watcherService.remove(watcherId).then(() => {
@@ -48,6 +53,7 @@ export function WatcherAppIndex() {
             <h1>Watcher App</h1>
             <button className="add-btn" onClick={() => setIsAddWatcher(true)}>Add Watcher</button>
             <WatcherList
+                key={watchers.map(watcher => watcher.id)}
                 watchers={watchers}
                 onRemoveWatcher={onRemoveWatcher}
                 onOpen={onOpen}
@@ -58,7 +64,7 @@ export function WatcherAppIndex() {
             }
 
             {
-                isAddWatcher && <AddWatcher onCloseAddWatcherModal={onCloseAddWatcherModal} />
+                isAddWatcher && <AddWatcher onCloseAddWatcherModal={onCloseAddWatcherModal} onAddWatcher={onAddWatcher} />
             }
         </div>
     )
