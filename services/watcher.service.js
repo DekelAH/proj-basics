@@ -52,11 +52,11 @@ function _createWatchers() {
 
         watchers = [
 
-            { id: 'w102', fullName: 'Muki Da', movies: ['Black Hawk Dawn', 'Saving Private Ryan'] },
-            { id: 'w101', fullName: 'Puki Ba', movies: ['Rambo', 'Rocky'] },
-            { id: 'w103', fullName: 'Shuki Sa', movies: ['Titanic', 'King Kong'] },
-            { id: 'w104', fullName: 'Luki Ra', movies: ['Saru The Way Home', 'Saving Shuli'] },
-            { id: 'w105', fullName: 'Zazi La', movies: ['Inception', 'SwordFish'] },
+            { id: utilService.makeId(), fullName: 'Muki Da', movies: ['Black Hawk Dawn', 'Saving Private Ryan'] },
+            { id: utilService.makeId(), fullName: 'Puki Ba', movies: ['Rambo', 'Rocky'] },
+            { id: utilService.makeId(), fullName: 'Shuki Sa', movies: ['Titanic', 'King Kong'] },
+            { id: utilService.makeId(), fullName: 'Luki Ra', movies: ['Saru The Way Home', 'Saving Shuli'] },
+            { id: utilService.makeId(), fullName: 'Zazi La', movies: ['Inception', 'SwordFish'] },
         ]
 
         utilService.saveToStorage(WATCHER_KEY, watchers)
